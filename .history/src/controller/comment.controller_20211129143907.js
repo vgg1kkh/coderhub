@@ -1,0 +1,6 @@
+class CommentController {
+    async create(){
+
+    }
+}
+
