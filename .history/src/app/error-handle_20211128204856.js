@@ -28,7 +28,7 @@ const errorHandler = (error, ctx) => {
     case "Incorrect arguments to mysqld_stmt_execut":
         ctx.status = 401; //Bad request;
         ctx.response.body = "SQL Error"
-        break;
+
     default:
       ctx.status = 404;
       ctx.response.body = "Page not found.";

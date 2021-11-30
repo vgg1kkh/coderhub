@@ -1,4 +1,4 @@
-const {create,getMomentById,getMomentList}=require("../service/moments.service")
+const {create,getMomentById,get}=require("../service/moments.service")
 
 class momentController {
     async create(ctx,next){
@@ -21,10 +21,7 @@ class momentController {
     }
 
     async list(ctx,next){
-        const {limit,offset} = ctx.request.query
-        console.log("limit,offset",limit,offset)
-        const result = await getMomentList(limit,offset)
-        ctx.body = result
+
     }
 }
 

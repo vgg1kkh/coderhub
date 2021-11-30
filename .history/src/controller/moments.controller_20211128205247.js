@@ -21,8 +21,8 @@ class momentController {
     }
 
     async list(ctx,next){
-        const {limit,offset} = ctx.request.query
-        console.log("limit,offset",limit,offset)
+        const {limit = 2,offset= 0} = ctx.request.query
+        console.log("limit")
         const result = await getMomentList(limit,offset)
         ctx.body = result
     }

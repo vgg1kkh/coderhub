@@ -25,10 +25,8 @@ const errorHandler = (error, ctx) => {
       ctx.status = 401; //Bad request
       ctx.response.body = "Authorization failure.";
       break;
-    case "Incorrect arguments to mysqld_stmt_execut":
-        ctx.status = 401; //Bad request;
-        ctx.response.body = "SQL Error"
-        break;
+    case "Incorrect arguments to mysqld_stmt_execut"
+
     default:
       ctx.status = 404;
       ctx.response.body = "Page not found.";

@@ -1,7 +1,7 @@
 const Router = require("koa-router");
 
 const { verifyAuth } = require("../middleware/auth.middleware");
-const { create,detail,list } = require("../controller/moments.controller");
+const { create,detail,r } = require("../controller/moments.controller");
 
 const momentRouter = new Router({ prefix: "/moments" });
 

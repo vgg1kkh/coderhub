@@ -20,7 +20,7 @@ class momentsService {
   }
 
   async getMomentById(id) {
-    const statement = `${sqlFrament}
+    const statement = `$
         where m.id = ?;
         `;
     const result = await connections.execute(statement, [id]);
